@@ -1,0 +1,47 @@
+{
+  "name": "react-todos-api-server",
+  "version": "1.0.0",
+  "description": "React ToDo api server project",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "stop": "forever stop server.js",
+    "nodemon": "nodemon server",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-chazov/react-todos-api-server.git"
+  },
+  "author": "Igor Chazov <igor-chazov@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igor-chazov/react-todos-api-server/issues"
+  },
+  "homepage": "https://github.com/igor-chazov/react-todos-api-server#readme",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "forever": "^3.0.4",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-slow": "^2.1.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0",
+    "ws": "^8.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  }
+}
